@@ -1,0 +1,20 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+function Question(props) {
+  return (
+    <div>
+      <h2 className="question">{props.content}</h2>
+      <div className="picture">
+        <img src={props.picture} alt="Hero" />
+      </div>
+    </div>
+  );
+}
+
+Question.propTypes = {
+  content: PropTypes.string.isRequired,
+  picture: PropTypes.string.isRequired
+};
+
+export default Question;
